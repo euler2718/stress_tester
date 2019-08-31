@@ -1,12 +1,12 @@
 defmodule Concurrent do
   defstruct url: nil, xApiKey: nil, headers: [{"Content-type", "application/json"}], filename: nil, update: true
   ## DEV
-  @url "https://model.api-dev.cfins.io/iqRating"
-  @xApiKey "8KGLKf6GD2pm8pOeoxjS53pg4JeDxdZ3ZYjLBgS6"
+  @url ""
+  @xApiKey ""
 
   ## QA
-  # @url "https://model.api-qa.cfins.io/iqRating"
-  # @xApiKey "9MCLUydi4R8hELmAVgmtM1EESalkybmC7kJZueUe"
+  # @url ""
+  # @xApiKey ""
 
   ## ALL
   @headers [{"Content-type", "application/json"}, {"x-api-key", @xApiKey}]
