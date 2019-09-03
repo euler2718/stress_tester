@@ -1,21 +1,22 @@
 # Concurrent
 
-**TODO: Add description**
+**TODO:**
+
+1)Generalize createTasks method to handle any/all from the Concurrent struct
+2)GenStages for full application tests (one lambda at a time, but multiple concurrent application tests)
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `concurrent` to your list of dependencies in `mix.exs`:
+clone
+mix deps.get
 
-```elixir
-def deps do
-  [
-    {:concurrent, "~> 0.1.0"}
-  ]
-end
-```
+## Usage
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/concurrent](https://hexdocs.pm/concurrent).
+1) alter the lib/concurrent.ex file to point to correct url and x-api-key
+2) alter the lib/request_body.json to include proper request
+3*) iex> Concurrent.createTasks(100)
+                => this will run 100 requests
+                
+                OR
+3*) iex> Concurrent.createTasks(%Concurrent{filename: "sample_request_filePath"}, 100)
 
