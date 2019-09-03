@@ -8,6 +8,7 @@
 ## Installation
 
 clone
+
 mix deps.get
 
 ## Usage
